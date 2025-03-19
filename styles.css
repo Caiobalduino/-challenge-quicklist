@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+/* Telas */
+#home, #shopping-list {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+header .logo {
+  width: 150px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Botões */
+button {
+  background: #CA3884;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #A52C6B;
+}
+
+#start-list {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#back-btn {
+  background: transparent;
+  color: #CA3884;
+  font-size: 18px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#back-btn:hover {
+  color: #A52C6B;
+}
+
+/* Input e lista */
+.input-group {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Notificação */
+#notification {
+  color: #C93847;
+  margin-top: 10px;
+  font-size: 14px;
+}
