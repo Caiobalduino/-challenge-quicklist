@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickList</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <!-- início -->
+    <div id="home">
+      <header>
+          <img src="img/logo.png" alt="QuickList Logo" class="logo">
+      </header>
+      <main>
+          <button id="start-list">Iniciar Lista</button>
+      </main>
+  </div>
+
+  <!-- lista de compras -->
+  <div id="shopping-list" class="hidden">
+      <header>
+          <img src="img/logo.png" alt="QuickList Logo" class="logo">
+      </header>
+      <main>
+          <button id="back-btn">&#8592; Voltar</button>
+          <h1>Compras da semana</h1>
+          <div class="input-group">
+              <input type="text" id="item-input" placeholder="Adicione um novo item">
+              <button id="add-item">Adicionar item</button>
+          </div>
+          <ul id="list"></ul>
+          <p id="notification" class="hidden">Item removido da lista</p>
+      </main>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
