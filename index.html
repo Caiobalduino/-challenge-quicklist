@@ -8,32 +8,32 @@
     <link rel="icon" type="image/png" href="img/Rareblocks.png">
 </head>
 <body>
-    <!-- início -->
-    <div id="home">
-      <header>
-          <img src="img/logo.svg" alt="QuickList Logo" class="logo">
-      </header>
-      <main>
-          <button id="start-list">Iniciar Lista</button>
-      </main>
-  </div>
+    <!-- initial -->
+    <div id="start-container" class="fade-in">
+        <img src="img/logo.svg" alt="QuickList Logo" class="logo">
+        <button id="start-list">Iniciar Lista</button>
+    </div>
 
-  <!-- lista de compras -->
-  <div id="shopping-list" class="hidden">
-      <header>
-          <img src="img/logo.svg" alt="QuickList Logo" class="logo">
-      </header>
-      <main>
-          <button id="back-btn">&#8592; Voltar</button>
-          <h1>Compras da semana</h1>
-          <div class="input-group">
-              <input type="text" id="item-input" placeholder="Adicione um novo item">
-              <button id="add-item">Adicionar item</button>
-          </div>
-          <ul id="list"></ul>
-          <p id="notification" class="hidden">Item removido da lista</p>
-      </main>
-  </div>
-    <script src="script.js"></script>
+    <!-- Lista -->
+    <div id="shopping-list" class="hidden">
+        <header>
+            <img src="img/logo.svg" alt="QuickList Logo" class="logo">
+        </header>
+        <main>
+            <button id="back-btn">&#8592; Voltar</button>
+            <h1>Compras da semana</h1>
+            <div class="input-group">
+                <input type="text" id="item-input" placeholder="Adicione um novo item">
+                <button id="add-item">Adicionar item</button>
+            </div>
+            <ul id="list"></ul>
+            <div id="notification" class="hidden">
+                <img src="img/Alerticon.png" alt="Alerta">
+                <p>Item removido da lista</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
