@@ -24,6 +24,7 @@ O projeto é composto pelos seguintes arquivos e pastas:
  ├── 📄 styles.css    # Estilização do projeto
  ├── 📄 scripts.js    # Lógica da conversão
  ├── 📄 README.md     # Documentação do projeto
+```
 
  ## 🔧 Como executar o projeto
 
