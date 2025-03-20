@@ -37,9 +37,3 @@ O projeto é composto pelos seguintes arquivos e pastas:
    cd -challenge-quicklist
    ```
 3. Abra o arquivo `index.html` no navegador
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Sinta-se livre para modificá-lo e usá-lo como quiser.
-
----
