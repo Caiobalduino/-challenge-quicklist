@@ -22,7 +22,7 @@ O projeto é composto pelos seguintes arquivos e pastas:
  ├── 📁 img           # Imagens do projeto
  ├── 📄 index.html    # Estrutura da página
  ├── 📄 styles.css    # Estilização do projeto
- ├── 📄 scripts.js    # Lógica da conversão
+ ├── 📄 scripts.js    # Lógica da lista
  ├── 📄 README.md     # Documentação do projeto
 ```
 
