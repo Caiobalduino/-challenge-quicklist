@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
+  font-family: "Inter", sans-serif;
   height: 100%;
   margin: 0;
   display: flex;
@@ -43,11 +45,162 @@ body, html {
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(-20px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+#start-container,
+#shopping-list {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#start-container.hidden, #shopping-list.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+#shopping-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 100vh;
+}
+
+#shopping-list header {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 62px;
+  display: flex;
+  justify-content: center;
+}
+
+#shopping-list header img {
+  max-width: 155px;
+}
+
+#shopping-list main {
+  display: flex;
+  flex-direction: column;
+  width: 627px;
+}
+
+#shopping-list button#back-btn {
+  color: #ca3884;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+#shopping-list button#back-btn:hover {
+  transform: scale(1.02);
+}
+
+#shopping-list .input-group {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+  margin-top: 44px;
+}
+
+#shopping-list input#item-input {
+  width: 100%;
+  padding: 11px 18px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+  flex-grow: 1;
+}
+
+#shopping-list input#item-input:focus {
+  border-color: #ff7eb3;
+}
+
+#shopping-list button#add-item {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #ca3884;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+#shopping-list button#add-item:hover {
+  background-color: #a52c6b;
+}
+
+#list {
+  margin-top: 40px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-item img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.list-item img:hover {
+  transform: scale(1.1);
+}
+
+.list-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#notification {
+  justify-content: flex-start;
+  align-items: center;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+#notification:not(.hidden) {
+  display: flex;
+}
+
+#notification img {
+  margin-right: 10px;
+  width: 20px;
+}
+
+#notification p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
 }
